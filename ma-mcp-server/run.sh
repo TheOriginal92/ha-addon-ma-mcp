@@ -28,7 +28,7 @@ bashio::log.info "MCP endpoint will be available at: http://$(hostname):${PORT}/
 
 # Start the MCP server
 # The music-assistant-mcp package exposes a CLI entrypoint
-exec music-assistant-mcp \
+exec /opt/venv/bin/music-assistant-mcp \
     --transport streamable-http \
     --host 0.0.0.0 \
     --port "${PORT}"
