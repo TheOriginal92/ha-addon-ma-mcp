@@ -1,0 +1,22 @@
+name: "Music Assistant MCP Server"
+version: "1.0.0"
+slug: "ma_mcp_server"
+description: "Exposes Music Assistant as an MCP server (HTTP/SSE) for AI assistants like Claude."
+url: "https://github.com/YOUR_GITHUB_USERNAME/ha-addon-ma-mcp"
+arch:
+  - aarch64
+  - amd64
+  - armv7
+ports:
+  8668/tcp: 8668
+ports_description:
+  8668/tcp: "MCP HTTP endpoint for AI clients"
+options:
+  ma_server_url: "http://homeassistant.local:8095"
+  ma_token: ""
+  port: 8668
+schema:
+  ma_server_url: str
+  ma_token: str
+  port: int
+image: "ghcr.io/{arch}-addon-ma-mcp-server"
