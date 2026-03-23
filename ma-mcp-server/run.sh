@@ -20,10 +20,10 @@ fi
 export MA_SERVER_URL="${MA_SERVER_URL}"
 export MA_TOKEN="${MA_TOKEN}"
 
-# FastMCP reads these environment variables for transport config
-export FASTMCP_TRANSPORT="streamable-http"
-export FASTMCP_HOST="0.0.0.0"
-export FASTMCP_PORT="${PORT}"
+# Correct env vars as defined in music_assistant_mcp/server.py
+export MA_MCP_TRANSPORT="streamable-http"
+export MA_MCP_HOST="0.0.0.0"
+export MA_MCP_PORT="${PORT}"
 
 bashio::log.info "Connecting to Music Assistant at: ${MA_SERVER_URL}"
 bashio::log.info "MCP endpoint will be available at: http://$(hostname):${PORT}/mcp"
