@@ -19,4 +19,3 @@ schema:
   ma_server_url: str
   ma_token: str
   port: int
-image: "ghcr.io/{arch}-addon-ma-mcp-server"
