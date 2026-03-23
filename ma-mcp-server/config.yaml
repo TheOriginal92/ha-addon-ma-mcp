@@ -1,5 +1,5 @@
 name: "Music Assistant MCP Server"
-version: "1.0.0"
+version: "1.0.1"
 slug: "ma_mcp_server"
 description: "Exposes Music Assistant as an MCP server (HTTP/SSE) for AI assistants like Claude."
 url: "https://github.com/TheOriginal92/ha-addon-ma-mcp"
